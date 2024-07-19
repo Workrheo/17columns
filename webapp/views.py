@@ -18,13 +18,13 @@ def home(request):
     work_list = Our_WORKS_CATEGORY.objects.all()
     team_list = Team.objects.all()
     product_list = PRODUCT_CATEGORY.objects.all()
-
+    client_list = Client.objects.all()
 
     
 
    
     context = {'testimonials': testimonials , 'post_list' : post_list , 'work_list':work_list , 
-                'team_list':team_list, 'product_list':product_list,
+                'team_list':team_list, 'product_list':product_list,'client_list' : client_list,
                'meta_title': 'Combine Design Bengaluru | Home',
                'meta_description': 'Welcome to Combine Design Bengaluru. Explore our innovative interior design solutions.'
                }
@@ -40,9 +40,10 @@ def about(request):
     testimonials = Testimonials.objects.all()
     product_list = PRODUCT_CATEGORY.objects.all()
     client_list = Client.objects.all()
+    style_list = Our_STYLE_CATEGORY.objects.all()
 
     context = {'meta_title': 'About Combine Design | Transforming Spaces', 'product_list':product_list,
-                'post_list' : post_list ,'team_list':team_list, 'testimonials' : testimonials , 'client_list' : client_list,
+                'post_list' : post_list ,'team_list':team_list, 'testimonials' : testimonials , 'style_list' : style_list, 'client_list' : client_list,
                'meta_description': 'Transforming spaces with personalized designs in Bengaluru. Discover inspired living with Combine Design.'
                }
 
@@ -180,6 +181,7 @@ def post_detail(request, id):
     post_detail = Post.objects.get(id=id)
     categories = Category.objects.all()
     comments = Comment.objects.filter(post=post_detail)
+    post_list = Post.objects.all()
     
 
     if request.method =='POST' :
@@ -198,7 +200,7 @@ def post_detail(request, id):
 
 
     context = {
-		'post_detail':post_detail , 'testimonials': testimonials ,'categories' : categories , 'comments': comments , 
+		'post_detail':post_detail , 'post_list': post_list, 'testimonials': testimonials ,'categories' : categories , 'comments': comments , 
 'comment_form':comment_form ,  'meta_title': 'Combine Design Bengaluru | Home',
    'meta_description': 'Welcome to Combine Design Bengaluru. Explore our innovative interior design solutions.'
 
@@ -209,7 +211,7 @@ def post_detail(request, id):
 def contact(request):
 
     contactdetails = ContactDetails.objects.last()
-    template = 'Webapp/contact.html'
+    template = 'webapp/contact.html'
 
     if request.method == 'POST' : 
         contact_form = ContactForm(request.POST)
@@ -219,7 +221,7 @@ def contact(request):
             message = contact_form.cleaned_data['message']
 
             try : 
-                sm(subject , message ,from_email , [' merakihomes2022@gmail.com'] )
+                sm(subject , message ,from_email , ['info@17columns.com'] )
             
             except BadHeaderError : 
                 return HttpResponse('ivalid header')

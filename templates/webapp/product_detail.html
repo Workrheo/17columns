@@ -5,147 +5,70 @@
 
 {% block body %}
 
-            
-<section class="banner-section">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-5 col-md-12 col-sm-12 col-12 order-lg-1 order-2 banner-column">
-                <div class="banner_content" data-aos="fade-left">
-                    <div class="content">
-                        <h1>Aristo Products</h1>
-                        <p>{{product_detail.description}}</p>
-                        
-                       <!-- <div class="box">
-                            <span class="mb-0">Home</span>
-                            <span class="mb-0 dash">-</span>
-                            <span class="mb-0 box_span">Aristo Product Categories/span>
-                        </div>-->
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-7 col-md-12 col-sm-12 col-12 order-lg-2 order-1">
-                <div class="banner_wrapper">
-                    <figure class="sub-bannerimage mb-0" data-aos="fade-up">
-                        <img src="{% static 'assets/images/about-bannerimage.jpg' %}" alt="" class="img-fluid">
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-</div>
-<!-- MAIN SECTION -->
-<!--End Slider Section-->
-<section class="blog-posts blogpage-section">
-<div class="container">
-    <div class="row wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-        <div id="blog" class="col-xl-12">
-            <!-- threecolumn-blog  -->
-            <div class="row">
 
-            {% for details in product_list %}
-                
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="blog-box blog-box1">
-                        <figure class="blog-image mb-0">
-                            <img src="{{details.image.url}}" alt="" class="img-fluid">
-                        </figure>
-                        <div class="lower-portion">
-                            <i class="fa-solid fa-user"></i>
-                            <span class="text-size-14 text-mr">By : Aristo </span>
-                            <i class="tag-mb fa-solid fa-tag"></i>
-                            <span class="text-size-14">{{details.product_name}}</span>
-                            <h5 class="text-white">{{details.category_name}}</h5>
-                        </div>
-                        <div class="button-portion ">
-                           <!-- <div class="date">
-                                <i class="mb-0 calendar-ml fa-solid fa-calendar-days"></i>
-                                <span class="mb-0 text-size-14">{{details.created_at.date}}</span>
-                            </div>-->
-                          <!--  <div class="button">
-                                <a class="mb-0 read_more text-decoration-none" href="./single-blog.html">Read More</a>
-                            </div> -->
-                        </div>
-
-                        
-                        
-                    </div>
-                </div>
-               {% endfor %}
-          
-        </div>
-    </div>
-</div>
-</section>
-<!-- Testimonial -->
-<section class="testimonial-section">
-    <figure class="light-image mb-0">
-        <img src="{% static 'assets/images/top-lightimage.png' %}" alt="" class="img-fluid">
-    </figure>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="testimonial_content" data-aos="fade-right">
-                    <h6>Testimonials</h6>
-                    <!--<h2>Trusted By Over 30,000 Worldwide Customers Since 1998</h2> -->
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="owl-carousel owl-theme">
-               
-              
-                {% for details in testimonials %}
-                <div class="item">
-                    <div class="box">
-                       <!-- <div class="image">
-                            <figure class="testimonial-image1 mb-0">
-                                <img src="{{details.image.url}}" alt="" class="img-fluid">
-                            </figure>                    
-                            <figure class="testimonial-image2 mb-0">
-                                <img src="{{details.image.url}}" alt="" class="img-fluid">
-                            </figure>                    
-                            <figure class="testimonial-image3 mb-0">
-                                <img src="{% static 'assets/images/testimonial-5.png' %}" alt="" class="img-fluid">
-                            </figure>                    
-                            <figure class="testimonial-image4 mb-0">
-                                <img src="{% static 'assets/images/testimonial-3.png' %}" alt="" class="img-fluid">
-                            </figure>
-                            <figure class="testimonial-image5 mb-0">
-                                <img src="{% static 'assets/images/testimonial-4.png' %}" alt="" class="img-fluid">
-                            </figure>
-                            <figure class="quote-icon mb-0">
-                                <img src="{% static 'assets/images/quote-icon.png' %}" class="img-fluid" alt="">
-                            </figure>
-                        </div>     -->               
-                        <div class="box-content">
-                            <p class="text-size-18">
-                                {{details.content}}
-                              </p>
-                            <ul class="list-unstyled mb-0">
-                                <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                                <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                                <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                                <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                                <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            </ul>
-                            <div class="lower-portion">
-                                <span class="text-white text-size-16">{{details.name}}</span>
-                                <span class="text-size-14">Happy Customer</span>
-                                <figure class="quote-image mb-0">
-                                    <img src="{{details.image.url}}" class="img-fluid" alt="">
-                                </figure>
+ 
+        <!-- CONTENT START -->
+        <div class="page-content">
+            <!-- INNER PAGE BANNER -->
+            <div class="sx-bnr-inr overlay-wraper bg-parallax bg-top-center"  data-stellar-background-ratio="0.5"  style="background-image:url({% static 'images/banner/3.jpg' %});">
+            	<div class="overlay-main bg-black opacity-07"></div>
+                <div class="container">
+                    <div class="sx-bnr-inr-entry">
+                    	<div class="banner-title-outer">
+                        	<div class="banner-title-name">
+                        		<h2 class="m-tb0">{{product_detail}}</h2>
+                                <p></p>
                             </div>
                         </div>
+                        <!-- BREADCRUMB ROW -->                            
+                        
+                            <div>
+                                <ul class="sx-breadcrumb breadcrumb-style-2">
+                                    <li><a href="/">Home</a></li>
+                                    <li>{{product_detail}}</li>
+                                </ul>
+                            </div>
+                        
+                        <!-- BREADCRUMB ROW END -->                        
                     </div>
                 </div>
-                {% endfor %}
-                
             </div>
+            <!-- INNER PAGE BANNER END -->
+            
+			<!-- SECTION CONTENT START -->
+            <div class="section-full p-tb80 inner-page-padding">
+            	<div class="container">
+                   
+                    
+                    <!-- GALLERY CONTENT START -->
+                     <ul  class="masonry-outer mfp-gallery work-grid row clearfix list-unstyled">
+                     {% for details in product_list %}
+                        <!-- COLUMNS 1 -->
+                        <li class="masonry-item cat-1 col-lg-4 col-md-6 col-sm-12 m-b30">
+                            <div class="sx-box   image-hover-block">
+                                <div class="sx-thum-bx">
+                                    <img src="{{ details.image.url }}" alt="">
+                                </div>
+                               
+                                <a class="mfp-link" href="{{ details.image.url }}">
+                                    <i class="fa fa-arrows-alt"></i>
+                                </a>                                            
+                           </div>
+                        </li>
+                     {% endfor %}                                  
+                     </ul>
+                    <!-- GALLERY CONTENT END -->
+                    
+                    
+            	</div>
+
+            
+            </div>
+            <!-- SECTION CONTENT END  -->
+
         </div>
-    </div>
-    </section>
-</section>
+        <!-- CONTENT END -->
+        
 
 
 {% endblock body %}

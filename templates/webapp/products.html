@@ -6,122 +6,98 @@
 {% block body %}
 
 
-
-
-<section class="banner-section">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-5 col-md-12 col-sm-12 col-12 order-lg-1 order-2 banner-column">
-                <div class="banner_content" data-aos="fade-left">
-                    <div class="content">
-                        <h1>Our Products</h1>
-                        
-                        <!--<div class="box">
-                            <span class="mb-0">Home</span>
-                            <span class="mb-0 dash">-</span>
-                            <span class="mb-0 box_span">Services</span>
-                        </div> -->
+      <!-- CONTENT START -->
+      <div class="page-content">
+        <!-- INNER PAGE BANNER -->
+        <div class="sx-bnr-inr overlay-wraper bg-parallax bg-top-center"  data-stellar-background-ratio="0.5"  style="background-image:url({% static 'images/banner/3.jpg' %});">
+            <div class="overlay-main bg-black opacity-07"></div>
+            <div class="container">
+                <div class="sx-bnr-inr-entry">
+                    <div class="banner-title-outer">
+                        <div class="banner-title-name">
+                            <h2 class="m-tb0">Aristo Products</h2>
+                            <p></p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-7 col-md-12 col-sm-12 col-12 order-lg-2 order-1">
-                <div class="banner_wrapper">
-                    <figure class="sub-bannerimage mb-0" data-aos="fade-up">
-                        <img src="{% static 'assets/images/service-bannerimage.jpg' %}" alt="" class="img-fluid">
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-</div>
-<!-- Service -->
-<section class="servicepage-section">
-<div class="container">
-    <div class="row" data-aos="fade-up">
-
-
-        {% for details in product_list  %}
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-            <div class="service-box">
-                <div class="box-image">
-                    <figure class="mb-0 servicepage-image">
-                        <img src="{{details.image.url}}" class="img-fluid" alt="">
-                    </figure>
+                    <!-- BREADCRUMB ROW -->                            
                     
+                        <div>
+                            <ul class="sx-breadcrumb breadcrumb-style-2">
+                                <li><a href="/">Home</a></li>
+                                <li>Aristo Product</li>
+                            </ul>
+                        </div>
+                    
+                    <!-- BREADCRUMB ROW END -->                        
                 </div>
-                <div class="box-content">
-                    <h5 class="text-white">{{details.category_name}}</h5>
-                    <p class="text-size-16">{{details.description}}</p>
-                    <a class="read_more text-decoration-none" href="{% url 'webapp:product_detail' details.id %}">Read More
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </a>
-                </div>
-            </div> 
+            </div>
         </div>
-        {% endfor %}
+        <!-- INNER PAGE BANNER END -->
         
+       
+                   
+     
+        
+        <!-- SECTION CONTENT START -->
+        <div class="section-full p-tb80 bg-gray inner-page-padding">
+            <div class="container">
+                <div class="section-content">
+                    <!-- TITLE START -->
+                                      
+                    <!-- TITLE END -->                                 
+                    <div class="work-carousel-outer">
+                        <div class="owl-carousel mfp-gallery project-carousel project-carousel1 owl-btn-vertical-center">
+                            {% for details in product_list  %}
+                            <!-- COLUMNS 1 -->
+                            <div class="item">
+                                <div class="sx-box   image-single-carousel bg-cover" style="background-image:url({{details.image.url}})">
+                                    
+                                    <div class="sx-info  p-t20 text-white">
+                                        <h4 class="sx-tilte m-t0"><a href="{% url 'webapp:product_detail' details.id %}">{{details.category_name}}</a></h4>
+                                        <p>{{details.description}}</p>
+                                        <a href="{% url 'webapp:product_detail' details.id %}" class="site-button btn-half button-sm"><span>View All</span></a>
+                                    </div>
+                                                                               
+                               </div>
+                            </div>
+                            {% endfor %}
+                            
+                            <!-- 
+                            <div class="item">
+                                <div class="sx-box   image-single-carousel bg-cover" style="background-image:url({% static 'images/gallery/pic2.jpg' %})">
+                                    
+                                    <div class="sx-info  p-t20 text-white">
+                                        <h4 class="sx-tilte m-t0"><a href="#">Interior Work Avroko</a></h4>
+                                        <p>Many of our projects cannot be featured in this section due to the Security levels of the space.</p>
+                                        <a href="#" class="site-button btn-half button-sm"><span>View All</span></a>
+                                    </div>
+                                                                               
+                               </div>
+                            </div>
+                            
+                            <div class="item">
+                                <div class="sx-box   image-single-carousel bg-cover" style="background-image:url({% static 'images/gallery/pic3.jpg' %})">
+                                    
+                                    <div class="sx-info  p-t20 text-white">
+                                        <h4 class="sx-tilte m-t0"><a href="#">Interior Work Avroko</a></h4>
+                                        <p>Many of our projects cannot be featured in this section due to the Security levels of the space.</p>
+                                        <a href="#" class="site-button btn-half button-sm"><span>View All</span></a>
+                                    </div>
+                                                                               
+                               </div>
+                            </div>-->                                                              
+                                                                                                                     
+                         </div>
+                    </div> 
+                 </div>
+             </div>
+         </div>           
+        <!-- SECTION CONTENT END  -->            
+        
+      
+
     </div>
-</div>
-</section>
-<!-- Successful work -->
-<section class="work-section">
-<figure class="light-image mb-0">
-    <img src="{% static 'assets/images/top-lightimage.png' %}" alt="" class="img-fluid">
-</figure>
-<div class="container">
-    <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-            <div class="work_content">
-                <div class="year">
-                    <span class="value counter">10</span>
-                    <sup class="mb-0 plus">+</sup>
-                </div>
-                <h2>Years of Successful Work in Market</h2>
-                <div class="discover-button">
-                    <a class="discover_more text-decoration-none" href="{% url 'webapp:our_work' %}">Discover More</a>
-                    <a class="image-button text-decoration-none" href="{% url 'webapp:our_work' %}">
-                        <figure class="arrow mb-0">
-                            <img src="{% static 'assets/images/arrow.png' %}" alt="" class="img-fluid">
-                        </figure>
-                    </a> 
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-            <div class="work_wrapper">
-                <figure class="work-image mb-0" data-aos="fade-right">
-                    <img src="{% static 'assets/images/work-image.jpg' %}" alt="" class="img-fluid">
-                </figure>
-                <figure class="work-imagebackground mb-0" data-aos="fade-up">
-                    <img src="{% static 'assets/images/work-imagebackground.jpg' %}" alt="" class="img-fluid">
-                </figure>
-            </div> 
-        </div>
-    </div>
-</div>
-</section>
-<!-- Journey -->
-<section class="journey-section">
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="journey_content" data-aos="fade-right">
-                <h6>Work With Us</h6>
-                <h2>Start Your Customer Journey With Us.</h2>
-            </div>
-            <div class="journey-button">
-                <a class="get_started text-decoration-none" href="./contact.html">Get Started</a>
-                <a class="image-button text-decoration-none" href="./contact.html">
-                    <figure class="arrow mb-0">
-                        <img src="{% static 'assets/images/arrow.png' %}" alt="" class="img-fluid">
-                    </figure>
-                </a> 
-            </div>
-        </div>
-    </div>
-</div>
-</section>
+    <!-- CONTENT END -->
 
 
 

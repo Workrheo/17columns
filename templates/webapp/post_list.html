@@ -8,142 +8,236 @@
 
 
 
-<section class="banner-section">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-5 col-md-12 col-sm-12 col-12 order-lg-1 order-2 banner-column">
-                <div class="banner_content" data-aos="fade-left">
-                    <div class="content">
-                        <h1>Blog</h1>
-                        
-                        <!--<div class="box">
-                            <span class="mb-0">Home</span>
-                            <span class="mb-0 dash">-</span>
-                            <span class="mb-0 box_span">Blog</span>
-                        </div>-->
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-7 col-md-12 col-sm-12 col-12 order-lg-2 order-1">
-                <div class="banner_wrapper">
-                    <figure class="sub-bannerimage mb-0" data-aos="fade-up">
-                        <img src="{% static 'assets/images/about-bannerimage.jpg' %}" alt="" class="img-fluid">
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-</div>
-<!-- Blog -->
-<section class="blogpage-section">
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="blog_content position-relative" data-aos="fade-right">
-                <h2>From Our Blog</h2>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-
-
-        {% for post in post_list%}
-
-        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-            <div class="blog-box" data-aos="fade-up">
-                <figure class="blog-image mb-0">
-                    <img src="{{post.image.url}}" alt="" class="img-fluid">
-                </figure>
-                <div class="lower-portion">
-                    <i class="fa-solid fa-user"></i>
-                    <span class="text-size-14 text-mr">By : Admin</span>
-                    <i class="tag-mb fa-solid fa-tag"></i>
-                    <span class="text-size-14">{{post.category}}</span>
-                    <h5><a href="{% url 'webapp:post_detail' post.id %}">{{post}}</a></h5>
-                </div>
-                <div class="button-portion">
-                    <div class="date">
-                        <i class="mb-0 calendar-ml fa-solid fa-calendar-days"></i>
-                        <span class="mb-0 text-size-14">{{details.created.date}}</span>
-                    </div>
-                   
-                </div>
-            </div>
-        </div>
-        {% endfor %}
-       
-    </div>
-</div>
-</section>
-<!-- Testimonial -->
-<section class="testimonial-section">
-    <figure class="light-image mb-0">
-        <img src="{% static 'assets/images/top-lightimage.png' %}" alt="" class="img-fluid">
-    </figure>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="testimonial_content" data-aos="fade-right">
-                    <h6>Testimonials</h6>
-                    <!--<h2>Trusted By Over 30,000 Worldwide Customers Since 1998</h2> -->
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="owl-carousel owl-theme">
-               
-              
-                {% for details in testimonials %}
-                <div class="item">
-                    <div class="box">
-                       <!-- <div class="image">
-                            <figure class="testimonial-image1 mb-0">
-                                <img src="{{details.image.url}}" alt="" class="img-fluid">
-                            </figure>                    
-                            <figure class="testimonial-image2 mb-0">
-                                <img src="{{details.image.url}}" alt="" class="img-fluid">
-                            </figure>                    
-                            <figure class="testimonial-image3 mb-0">
-                                <img src="{% static 'assets/images/testimonial-5.png' %}" alt="" class="img-fluid">
-                            </figure>                    
-                            <figure class="testimonial-image4 mb-0">
-                                <img src="{% static 'assets/images/testimonial-3.png' %}" alt="" class="img-fluid">
-                            </figure>
-                            <figure class="testimonial-image5 mb-0">
-                                <img src="{% static 'assets/images/testimonial-4.png' %}" alt="" class="img-fluid">
-                            </figure>
-                            <figure class="quote-icon mb-0">
-                                <img src="{% static 'assets/images/quote-icon.png' %}" class="img-fluid" alt="">
-                            </figure>
-                        </div>     -->               
-                        <div class="box-content">
-                            <p class="text-size-18">
-                                {{details.content}}
-                              </p>
-                            <ul class="list-unstyled mb-0">
-                                <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                                <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                                <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                                <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                                <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            </ul>
-                            <div class="lower-portion">
-                                <span class="text-white text-size-16">{{details.name}}</span>
-                                <span class="text-size-14">Happy Customer</span>
-                                <figure class="quote-image mb-0">
-                                    <img src="{{details.image.url}}" class="img-fluid" alt="">
-                                </figure>
+   
+        <!-- CONTENT START -->
+        <div class="page-content">
+            <!-- INNER PAGE BANNER -->
+            <div class="sx-bnr-inr overlay-wraper bg-parallax bg-top-center"  data-stellar-background-ratio="0.5"  style="background-image:url({% static 'images/banner/7.jpg' %});">
+            	<div class="overlay-main bg-black opacity-07"></div>
+                
+                <div class="container">
+                    <div class="sx-bnr-inr-entry">
+                    	<div class="banner-title-outer">
+                        	<div class="banner-title-name">
+                        		<h2 class="m-tb0">Our Blogs</h2>
+                                <p></p>
                             </div>
                         </div>
+                        <!-- BREADCRUMB ROW -->                            
+                        
+                            <div>
+                                <ul class="sx-breadcrumb breadcrumb-style-2">
+                                    <li><a href="/">Home</a></li>
+                                    <li>Blog</li>
+                                </ul>
+                            </div>
+                        
+                        <!-- BREADCRUMB ROW END -->                        
                     </div>
-                </div>
-                {% endfor %}
-                
-            </div>
-        </div>
-    </div>
-    </section>
+                </div> 
 
+            </div>
+            <!-- INNER PAGE BANNER END -->
+            
+			<!-- SECTION CONTENT START -->
+            <div class="section-full p-tb80 bg-white inner-page-padding">
+                
+                <!-- GALLERY CONTENT START -->
+                <div class="container">
+                    <div class="masonry-outer mfp-gallery news-grid clearfix row ">
+                        	
+                        <!-- COLUMNS 1 -->
+                        {% for post in post_list%}
+                        <div class="masonry-item  col-lg-4 col-md-6 col-sm-12">
+								<div class="blog-post blog-grid date-style-2">
+                                
+                                    <div class="sx-post-media sx-img-effect img-reflection">
+                                        <a href="{{post.image.url}}"><img src="{{post.image.url}}" alt=""></a>
+                                    </div>
+                                    
+                                    <div class="sx-post-info p-t30">
+                                        <div class="sx-post-meta ">
+                                            
+                                        </div>                                
+                                        <div class="sx-post-title ">
+                                            <h4 class="post-title"><a href="{% url 'webapp:post_detail' post.id %}">{{post}}</a></h4>
+                                        </div>
+
+                                       
+                                        
+                                    </div>
+                                    
+                                </div>                        
+                        </div>
+                        {% endfor %}
+                        
+                       
+                        <!--<div class="masonry-item  col-lg-4 col-md-6 col-sm-12">
+                            <div class="blog-post blog-grid date-style-2">
+                                
+                                <div class="sx-post-media sx-img-effect img-reflection">
+                                    <a href="javascript:void(0);"><img src="{% static 'images/blog/blog-grid/pic1.jpg' %}" alt=""></a>
+                                </div>
+                                
+                                <div class="sx-post-info p-t30">
+                                    <div class="sx-post-meta ">
+                                        <ul>
+                                            <li class="post-date"><strong>25</strong> <span>Sep</span> </li>
+                                            <li class="post-author"><a href="javascript:void(0);">By <span>John</span></a> </li>
+                                            <li class="post-comment"> <a href="javascript:void(0);">5 Comments</a> </li>
+                                        </ul>
+                                    </div>                             
+                                    <div class="sx-post-title ">
+                                        <h4 class="post-title"><a href="javascript:void(0);">Helping you and your house become better acquainted.</a></h4>
+                                    </div>
+                                   
+                                   <div class="sx-post-readmore">
+                                         <a href="javascript:void(0);" title="READ MORE" rel="bookmark" class="site-button-link">View More</a>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                       
+                        <div class="masonry-item  col-lg-4 col-md-6 col-sm-12">
+                            <div class="blog-post blog-grid date-style-2">
+                                
+                                <div class="sx-post-media sx-img-effect img-reflection">
+                                    <a href="javascript:void(0);"><img src="{% static 'images/blog/blog-grid/pic2.jpg' %}" alt=""></a>
+                                </div>
+                                
+                                <div class="sx-post-info p-t30">
+                                    <div class="sx-post-meta ">
+                                        <ul>
+                                            <li class="post-date"><strong>26</strong> <span>Sep</span> </li>
+                                            <li class="post-author"><a href="javascript:void(0);">By <span>John</span></a> </li>
+                                            <li class="post-comment"> <a href="javascript:void(0);">5 Comments</a> </li>
+                                        </ul>
+                                    </div>                             
+                                    <div class="sx-post-title ">
+                                        <h4 class="post-title"><a href="javascript:void(0);">Creating quality urban lifestyles, building...</a></h4>
+                                    </div>
+                                   
+                                   <div class="sx-post-readmore">
+                                         <a href="javascript:void(0);" title="READ MORE" rel="bookmark" class="site-button-link">View More</a>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="masonry-item  col-lg-4 col-md-6 col-sm-12">
+                            <div class="blog-post blog-grid date-style-2">
+                                
+                                <div class="sx-post-media sx-img-effect img-reflection">
+                                    <a href="javascript:void(0);"><img src="{% static 'images/blog/blog-grid/pic3.jpg' %}" alt=""></a>
+                                </div>
+                                
+                                <div class="sx-post-info p-t30">
+                            
+                                    <div class="sx-post-meta ">
+                                        <ul>
+                                            <li class="post-date"><strong>16</strong> <span>Sep</span> </li>
+                                            <li class="post-author"><a href="javascript:void(0);">By <span>John</span></a> </li>
+                                            <li class="post-comment"> <a href="javascript:void(0);">3 Comments</a> </li>
+                                        </ul>
+                                    </div>
+                                                                
+                                    <div class="sx-post-title ">
+                                        <h4 class="post-title"><a href="javascript:void(0);">When it comes to your house, don’t mess...</a></h4>
+                                    </div>
+                                    
+
+                                    
+                                   <div class="sx-post-readmore">
+                                         <a href="javascript:void(0);" title="READ MORE" rel="bookmark" class="site-button-link">View More</a>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="masonry-item  col-lg-4 col-md-6 col-sm-12">
+                            <div class="blog-post blog-grid date-style-2">
+                                
+                                <div class="sx-post-media sx-img-effect img-reflection">
+                                    <a href="javascript:void(0);"><img src="{% static 'images/blog/blog-grid/pic4.jpg' %}" alt=""></a>
+                                </div>
+                                
+                                <div class="sx-post-info p-t30">
+                            
+                                    <div class="sx-post-meta ">
+                                        <ul>
+                                            <li class="post-date"><strong>18</strong> <span>Sep</span> </li>
+                                            <li class="post-author"><a href="javascript:void(0);">By <span>John</span></a> </li>
+                                            <li class="post-comment"> <a href="javascript:void(0);">5 Comments</a> </li>
+                                        </ul>
+                                    </div>
+                                                                
+                                    <div class="sx-post-title ">
+                                        <h4 class="post-title"><a href="javascript:void(0);">Don’t get framed by the competition, trust our...</a></h4>
+                                    </div>
+                                    
+
+                                    
+                                   <div class="sx-post-readmore">
+                                         <a href="javascript:void(0);" title="READ MORE" rel="bookmark" class="site-button-link">View More</a>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="masonry-item  col-lg-4 col-md-6 col-sm-12">
+                            <div class="blog-post blog-grid date-style-2">
+                                
+                                <div class="sx-post-media sx-img-effect img-reflection">
+                                    <a href="javascript:void(0);"><img src="{% static 'images/blog/blog-grid/pic5.jpg' %}" alt=""></a>
+                                </div>
+                                
+                                <div class="sx-post-info p-t30">
+                                    <div class="sx-post-meta ">
+                                        <ul>
+                                            <li class="post-date"><strong>15</strong> <span>Sep</span> </li>
+                                            <li class="post-author"><a href="javascript:void(0);">By <span>John</span></a> </li>
+                                            <li class="post-comment"> <a href="javascript:void(0);">2 Comments</a> </li>
+                                        </ul>
+                                    </div>                            
+                            
+                                    <div class="sx-post-title ">
+                                        <h4 class="post-title"><a href="javascript:void(0);">We’re the construction kings, building up great...</a></h4>
+                                    </div>
+                                    
+
+                                    
+                                   <div class="sx-post-readmore">
+                                         <a href="javascript:void(0);" title="READ MORE" rel="bookmark" class="site-button-link">View More</a>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>-->
+                        
+
+                    </div>
+                    
+                </div>
+                <!-- GALLERY CONTENT END -->
+            
+            </div>
+            <!-- SECTION CONTENT END  -->
+
+        </div>
+        <!-- CONTENT END -->
 
 {% endblock body %}

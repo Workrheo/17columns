@@ -5,495 +5,450 @@
 
 {% block body %}
 
-<div class="social-icons position-relative">
-    <figure class="line">
-        <img src="{% static 'assets/images/line-image.png' %}" alt="" class="img-fluid">
-    </figure>
-    <ul class="list-unstyled mb-0 position-absolute">
-        <li><a href="https://www.facebook.com/profile.php?id=100088716128424" class="text-decoration-none"><i class="fa-brands fa-facebook social-networks"></i></a></li>
-        <!-- <li><a href="https://www.instagram.com/merakihomz_blr/" class="text-decoration-none"><i class="fa-brands fa-twitter social-networks"></i></a></li> -->
-        <li><a href="https://www.instagram.com/merakihomz_blr/" class="text-decoration-none"><i class="fa-brands fa-instagram social-networks"></i></a></li>
-        <li><a href="https://www.linkedin.com/company/meraki-homz/" class="text-decoration-none"><i class="fa-brands fa-linkedin social-networks"></i></a></li>
-    </ul>
-</div>
-<section class="banner-section">
-    <figure class="banner-backgroundimage mb-0">
-        <img src="{% static 'assets/images/banner-backgroundimage.png' %}" alt="" class="img-fluid">
-    </figure>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xl-6 col-lg-8 col-md-12 col-sm-12 col-12">                    
-                <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="banner_content">
-                            <div class="content">
-                                <p>OUR EXPERTISE FOR</p>
-                                <h2>INTERIOR DESIGN</h2>
-                                
-                                <div class="discover-button">
-                                    <a class="discover_more text-decoration-none" href="{% url 'webapp:about' %}">Discover More</a>
-                                    <a class="image-button text-decoration-none" href="{% url 'webapp:about' %}">
-                                        <figure class="arrow mb-0">
-                                            <img src="{% static 'assets/images/arrow.png' %}" alt="" class="img-fluid">
-                                        </figure>
-                                    </a> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="banner_content">
-                            <div class="content">
-                                <p>FEATURED PROJECT</p>
-                                <h2>GREEN INTERIOR</p>
-                                <div class="discover-button">
-                                    <a class="discover_more text-decoration-none" href="{% url 'webapp:product' %}">Discover More</a>
-                                    <a class="image-button text-decoration-none" href="{% url 'webapp:product' %}">
-                                        <figure class="arrow mb-0">
-                                            <img src="{% static 'assets/images/arrow.png' %}" alt="" class="img-fluid">
-                                        </figure>
-                                    </a> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="banner_content">
-                            <div class="content">
-                                <p>INTERIOR REMODELING TO MAKES</p>
-                                <h2>YOUR LIFE EASIER</h2>
-                                <div class="discover-button">
-                                    <a class="discover_more text-decoration-none" href="{% url 'webapp:post_list' %}">Discover More</a>
-                                    <a class="image-button text-decoration-none" href="{% url 'webapp:post_list' %}">
-                                        <figure class="arrow mb-0">
-                                            <img src="{% static 'assets/images/arrow.png' %}" alt="" class="img-fluid">
-                                        </figure>
-                                    </a> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-6 col-lg-4 col-md-12 col-sm-12 col-12 d-lg-block d-none">
-            </div>
-        </div>
-    </div>
-</section>
-</div>
-<!-- Services -->
-<section class="service-section">
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="service_content" data-aos="fade-right">
-                <h6>What We Do</h6>
-                <h2>Our Highlighted Services for Interior Designs</h2>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-            <div class="box-content">
-                <div class="upper_portion">
-                    <figure class="image mb-0">
-                        <img src="{% static 'assets/images/service-image1.jpg' %}" class="article_img" alt="">
-                    </figure>
-                   
-                </div>
-                <div class="lower_portion_wrapper">
-                    <div class="lower_portion">
-                        <h5 class="text-white">Interior Design</h5>
-                        <p class="text-size-16">Meraki strives to provide top-notch residential interior solutions. We specialize in providing end-to-end services..</p>
-                        <a class="read_more text-decoration-none" href="{% url 'webapp:product' %}">Read More
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-            <div class="top-space">
-                <div class="box-content">
-                    <div class="upper_portion">
-                        <figure class="image mb-0">
-                            <img src="{% static 'assets/images/service-image2.jpg' %}" class="article_img" alt="">
-                        </figure>
-                        
-                    </div>
-                    <div class="lower_portion_wrapper">
-                        <div class="lower_portion">
-                            <h5 class="text-white">Renovation Design</h5>
-                            <p class="text-size-16">Does your home feel outdated and lack sufficient space? If yes, we've got a fantastic idea for you: go for a home renovation today..</p>
-                            <a class="read_more text-decoration-none" href="{% url 'webapp:product' %}">Read More
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>                
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-            <div class="box-content">
-                <div class="upper_portion">
-                    <figure class="image mb-0">
-                        <img src="{% static 'assets/images/service-image3.jpg' %}" class="article_img" alt="">
-                    </figure>
-                   
-                </div>
-                <div class="lower_portion_wrapper">
-                    <div class="lower_portion">
-                        <h5 class="text-white">Soft Furnishing</h5>
-                        <p class="text-size-16">Lighting and soft furnishing adds the right amount of wow factor in your interiors. You are born to shine and so does your interior..</p>
-                        <a class="read_more text-decoration-none" href="{% url 'webapp:product' %}">Read More
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-                
-    </div>
-    <div class="explore-button">
-        <a class="explore text-decoration-none" href="{% url 'webapp:product' %}">Explore All Services</a>
-        <a class="image-button text-decoration-none" href="{% url 'webapp:product' %}">
-            <figure class="arrow mb-0">
-                <img src="{% static 'assets/images/arrow.png' %}" alt="" class="img-fluid">
-            </figure>
-        </a> 
-    </div>
-</div>
-</section>
-<!-- About us -->
-<section class="about-section">
-<figure class="light-image mb-0">
-    <img src="{% static 'assets/images/top-lightimage.png' %}" alt="" class="img-fluid">
-</figure>
-<div class="container">
-    <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-6 col-12 order-md-1 order-2">
-            <div class="about_wrapper">
-                <figure class="about-image1 mb-0" data-aos="fade-up">
-                    <img src="{% static 'assets/images/about-image1-new.png' %}" alt="" class="img-fluid">
-                </figure>
-                <div class="badge c-black" id="badge">
-                    <span class="badge__char"> </span>
-                    <span class="badge__char badge__char1">.</span>
-                    <span class="badge__char"> </span>
-                    <span class="badge__char">M</span>
-                    <span class="badge__char">E</span>
-                    <span class="badge__char">R</span>
-                    <span class="badge__char">A</span>	
-                    <span class="badge__char">K</span>	
-                    <span class="badge__char">I</span>		
-                    <span class="badge__char"></span>	
-                    <span class="badge__char badge__char1">.</span>	
-                    <span class="badge__char"> </span>		
-                    <span class="badge__char">H</span>		
-                    <span class="badge__char">O</span>		
-                    <span class="badge__char">M</span>		
-                    <span class="badge__char">Z</span>		
-                   <!-- <span class="badge__char"></span>
-                    <span class="badge__char"></span>		
-                    <span class="badge__char"></span>
-                    <span class="badge__char"></span>
-                    <span class="badge__char"></span>
-                    <span class="badge__char"> </span>
-                    <span class="badge__char">-</span>
-                    <span class="badge__char"> </span>		
-                    <span class="badge__char"></span>		
-                    <span class="badge__char">/<span>		
-                    <span class="badge__char"></span>		
-                    <span class="badge__char"></span>
-                    <span class="badge__char"></span>		
-                    <span class="badge__char"> </span>
-                    <span class="badge__char"></span>
-                    <span class="badge__char"></span>
-                    <span class="badge__char"></span>		
-                    <span class="badge__char"></span>-->
-                    <figure class="about-logoimage mb-0">
-                        <img src="{% static 'assets/images/about-logoimage-new.png' %}" alt="" class="img-fluid">
-                    </figure>
-                </div> 
-            </div>     
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 col-12 order-md-2 order-3">
-            <div class="about_content" data-aos="fade-right">
-                <h6>About Us</h6>
-                <h2>WELCOME TO MERAKI HOMZ </h2>
-                <h5 class="text-white">Best Interior Designers Architectures for You.</h5>
-                <p>Choose your style at your comfort Meraki is a End to End interior design solution company located in bangalore, specialized in residential interior design.
-                    Whether you need a quick refresh of furniture, paint or wallpaper or an extensive full house renovation, we can provide the expertise to make sure the project runs smoothly and gives you the best results possible with in your budget.</p>
-                <div class="about-button">
-                    <a class="read_more text-decoration-none" href="{% url 'webapp:about' %}">Read More</a>
-                    <a class="image-button text-decoration-none" href="{% url 'webapp:about' %}">
-                        <figure class="arrow mb-0">
-                            <img src="{% static 'assets/images/arrow.png' %}" alt="" class="img-fluid">
-                        </figure>
-                    </a> 
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 col-12 order-md-3 order-2">
-            <div class="about_wrapper">
-                <figure class="about-image2 mb-0" data-aos="fade-up">
-                    <img src="{% static 'assets/images/about-image2-new.png' %}" alt="" class="img-fluid">
-                </figure>
-            </div> 
-        </div>
-    </div>
-</div>
-</section>
-<!-- Process -->
-<section class="process-section">
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="process_content" data-aos="fade-up">
-                <h2>OUR FEATURES</h2>
-                
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-            <div class="box-content">
-                <figure class="icon mb-0">
-                    <img src="{% static 'assets/images/process-icon1.png' %}" class="img-fluid" alt="">
-                </figure>
-                <span>01</span>
-                <h5 class="text-white">Interior Design</h5>
-                <p class="text-size-18 mb-0">Meraki strives to provide top-notch residential interior solutions. We specialize in providing end-to-end services..</p>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-            <div class="box-content">
-                <figure class="icon mb-0">
-                    <img src="{% static 'assets/images/process-icon2.png' %}" class="img-fluid" alt="">
-                </figure>
-                <span>02</span>
-                <h5 class="text-white">Renovation Design</h5>
-                <p class="text-size-18 mb-0">Does your home feel outdated and lack sufficient space? If yes, we've got a fantastic idea for you: go for a home renovation today..</p>
-            </div>               
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-            <div class="box-content">
-                <figure class="icon mb-0">
-                    <img src="{% static 'assets/images/process-icon3.png' %}" class="img-fluid" alt="">
-                </figure>
-                <span>03</span>
-                <h5 class="text-white">Soft Furnishing</h5>
-                <p class="text-size-18 mb-0">Lighting and soft furnishing adds the right amount of wow factor in your interiors. You are born to shine and so does your interior..</p>
-            </div>
-        </div>         
-    </div>
-</div>
-</section>
-<!-- Successful work -->
-<section class="work-section">
-<figure class="light-image mb-0">
-    <img src="{% static 'assets/images/top-lightimage.png' %}" alt="" class="img-fluid">
-</figure>
-<div class="container">
-    <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-            <div class="work_content">
-                <div class="year">
-                    <span class="value counter">10</span>
-                    <sup class="mb-0 plus">+</sup>
-                </div>
-                <h2>Years of Successful Work in Market</h2>
-                <div class="discover-button">
-                    <a class="discover_more text-decoration-none" href="{% url 'webapp:post_list' %}">Discover More</a>
-                    <a class="image-button text-decoration-none" href="{% url 'webapp:post_list' %}">
-                        <figure class="arrow mb-0">
-                            <img src="{% static 'assets/images/arrow.png' %}" alt="" class="img-fluid">
-                        </figure>
-                    </a> 
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-            <div class="work_wrapper">
-                <figure class="work-image mb-0" data-aos="fade-right">
-                    <img src="{% static 'assets/images/work-image.jpg' %}" alt="" class="img-fluid">
-                </figure>
-                <figure class="work-imagebackground mb-0" data-aos="fade-up">
-                    <img src="{% static 'assets/images/work-imagebackground.jpg' %}" alt="" class="img-fluid">
-                </figure>
-            </div> 
-        </div>
-    </div>
-</div>
-</section>
-<!-- Recent work -->
-<section class="recentwork-section">
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-12">
-            <div class="recentwork_content" data-aos="fade-up">
-                <h6>What’s New</h6>
-                <h2>Recent Work We Have Done</h2>
-            </div>
-        </div>
-    </div>
   
-    <div class="recentwork-carousel owl-carousel">
-        {% for details in work_list %}
-        <div class="item">
-
-           
-            <div class="image">
-                <figure class="recentwork-image mb-0">
-                    <img src="{{details.category_image.url}}" class="img-fluid" alt="">
-                </figure>
-                <div class="box-content">
-                    <div class="content">
-                        <span class="text-white text-size-16">{{details}} Design</span>
-                       <!--- <h4 class="text-white">Kawa - Glamorous Penthouse</h4> -->
-                        <a class="text-decoration-none" href="{% url 'webapp:our_work' %}">
-                            <figure class="arrow mb-0">
-                                <img src="{% static 'assets/images/arrow.png' %}" alt="" class="img-fluid">
-                            </figure>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {% endfor %}
+        <!-- CONTENT START -->
+        <div class="page-content">
         
-    </div>
-</div>
-</section>
-<!-- Testimonial -->
-<section class="testimonial-section">
-<figure class="light-image mb-0">
-    <img src="{% static 'assets/images/top-lightimage.png' %}" alt="" class="img-fluid">
-</figure>
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="testimonial_content" data-aos="fade-right">
-                <h6>Testimonials</h6>
-                <!--<h2>Trusted By Over 30,000 Worldwide Customers Since 1998</h2> -->
+
+            <!-- SLIDER START -->
+            <div id="rev_slider_346_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="beforeafterslider1" data-source="gallery" style="background:#252525;padding:0px;">
+                <!-- START REVOLUTION SLIDER 5.4.3.3 fullscreen mode -->
+                <div id="rev_slider_346_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.3.3">
+                    <ul>	
+                    	<!-- SLIDE 1 -->
+                        <li data-index="rs-964" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="{&quot;revslider-weather-addon&quot; : { &quot;type&quot; : &quot;&quot; ,&quot;name&quot; : &quot;&quot; ,&quot;woeid&quot; : &quot;&quot; ,&quot;unit&quot; : &quot;&quot; }}" data-description="" data-beforeafter='{"moveto":"50%|50%|50%|50%","bgColor":"#e7e7e7","bgType":"image","bgImage":"{% static 'images/main-slider/slider5/slide1.jpg' %}",
+                        "bgFit":"cover","bgPos":"center center","bgRepeat":"no-repeat","direction":"horizontal","easing":"Power2.easeInOut","delay":"500","time":"750","out":"fade","carousel":false}'>
+                    <!-- MAIN IMAGE -->
+                    <img src="{% static 'images/main-slider/slider5/slide1-sk.jpg' %}" data-beforeafter="after"  data-bgcolor=''  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+                    <!-- LAYERS -->
+                    
+                    <!-- LAYER NR. 1 text -->
+                    <div class="tp-caption   tp-resizeme rs-parallaxlevel-5" 
+                        id="slide-964-layer-1" 
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['110','110','110','0']" 
+                        data-fontsize="['120','120','120','60']"
+                        data-lineheight="['120','120','120','60']"
+                        data-letterspacing="['50','50','50','5']"
+                        data-width="['960','960','960','960']"
+                        
+                        
+                        data-height="none"
+                        data-whitespace="normal"
+                    
+                        data-type="text" 
+                        data-beforeafter="before" 
+                        data-responsive_offset="on" 
+                    
+                        data-frames='[{"delay":600,"speed":2000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:40px;","to":"o:1;fb:0;","ease":"Power4.easeInOut"},
+                        {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                        data-textAlign="['center','center','center','center']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,50]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[50,50,50,50]"
+                    
+                        style="z-index: 16; white-space: nowrap; font-size: 120px; line-height: 120px; font-weight: 900; color: #2e313b; letter-spacing: 10px;font-family: 'Poppins', sans-serif;text-transform:uppercase;">Creative</div>
+                    <!-- LAYER NR. 2 text -->
+                    <div class="tp-caption   tp-resizeme rs-parallaxlevel-5" 
+                        id="slide-964-layer-2" 
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['210','210','210','100']" 
+                        data-width="['960','960','960','320']"
+                        data-height="none"
+                        data-whitespace="normal"
+                    
+                        data-type="text" 
+                        data-beforeafter="before" 
+                        data-responsive_offset="on" 
+                    
+                        data-frames='[{"delay":600,"speed":2000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:40px;","to":"o:1;fb:0;","ease":"Power4.easeInOut"},
+                        {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                        data-textAlign="['center','center','center','center']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[5,5,5,5]"
+                    
+                        style="z-index: 11; min-width: 960px; max-width: 960px; white-space: normal; font-size: 18px; line-height: 24px; font-weight: 700; color: #2e313b; letter-spacing: 1px;font-family: 'Poppins', sans-serif;text-transform:uppercase;">Right design and right ideas matter a lot of in interior design business. a style that makes a statement.</div>
+                    
+                    <!-- LAYER NR. 3  button-->
+                    <div class="tp-caption   tp-resizeme rs-parallaxlevel-4" 
+                        id="slide-964-layer-3" 
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['bottom','bottom','bottom','bottom']" data-voffset="['70','70','70','80']" 
+                        data-width="none"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                    
+                        data-type="text" 
+                        data-beforeafter="before" 
+                        data-responsive_offset="on" 
+                    
+                        data-frames='[{"delay":700,"speed":2000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:40px;","to":"o:1;fb:0;","ease":"Power4.easeInOut"},
+                        {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"},
+                        {"frame":"hover","speed":"200","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;fb:0;","style":"c:rgb(0,0,0);bg:rgb(255,255,255);"}]'
+                        
+                        data-textAlign="['center','center','center','center']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[40,40,40,40]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[45,45,45,45]"
+                    
+                        style="z-index: 12; white-space: nowrap; font-size: 15px; line-height: 60px; font-weight: 700; color: #fff; letter-spacing: 5px;font-family: 'Poppins', sans-serif;background-color:#2e313b;cursor:pointer;">READ MORE</div>
+                        
+                    <!-- SLIDE RIGHT PART START-->
+                    
+                    <!-- LAYER NR. 1  text-->
+                    <div class="tp-caption   tp-resizeme  tp-blackshadow rs-parallaxlevel-5" 
+                        id="slide-964-layer-4" 
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['110','110','110','0']" 
+                        data-fontsize="['120','120','120','60']"
+                        data-lineheight="['120','120','120','60']"
+                        data-letterspacing="['50','50','50','5']"
+                        data-width="['960','960','960','960']"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        
+                    
+                        data-type="text" 
+                        data-beforeafter="after" 
+                        data-responsive_offset="on" 
+                    
+                        data-frames='[{"delay":2000,"speed":2000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:40px;","to":"o:1;fb:0;","ease":"Power4.easeInOut"},
+                        {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                        data-textAlign="['center','center','center','center']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,50]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[50,50,50,50]"
+                       
+                    
+                        style="z-index: 16; white-space: nowrap; font-size: 120px; line-height: 120px; font-weight: 900; color: #ffffff; letter-spacing: 10px;
+                        font-family: 'Poppins', sans-serif;text-transform:uppercase;">Creative </div>
+                    
+                    <!-- LAYER NR. 2 text -->
+                    <div class="tp-caption   tp-resizeme rs-parallaxlevel-5" 
+                        id="slide-964-layer-5" 
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['210','210','210','100']" 
+                        data-width="['960','960','960','320']"
+                        data-height="none"
+                        data-whitespace="normal"
+                    
+                        data-type="text" 
+                        data-beforeafter="after" 
+                        data-responsive_offset="on" 
+                    
+                        data-frames='[{"delay":2100,"speed":2000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:40px;","to":"o:1;fb:0;","ease":"Power4.easeInOut"},
+                        {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                        data-textAlign="['center','center','center','center']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[5,5,5,5]"
+                    
+                        style="z-index: 17; min-width: 960px; max-width: 960px; white-space: normal; font-size: 18px; line-height: 24px; font-weight: 700; color: #ffffff; letter-spacing: 1px;font-family: 'Poppins', sans-serif;text-transform:uppercase;">Right design and right ideas matter a lot of in interior design business. a style that makes a statement.</div>
+                    
+                    <!-- LAYER NR. 3  button-->
+                    <div class="tp-caption   tp-resizeme rs-parallaxlevel-4" 
+                        id="slide-964-layer-6" 
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['bottom','bottom','bottom','bottom']" data-voffset="['70','70','70','80']" 
+                        data-width="none"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                    
+                        data-type="text" 
+                        data-beforeafter="after" 
+                        data-responsive_offset="on" 
+                    
+                        data-frames='[{"delay":2200,"speed":2000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:40px;","to":"o:1;fb:0;","ease":"Power4.easeInOut"},
+                        {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"},
+                        {"frame":"hover","speed":"200","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;fb:0;","style":"c:rgb(0,0,0);bg:rgb(255,255,255);"}]'
+                        data-textAlign="['center','center','center','center']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[40,40,40,40]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[45,45,45,45]"
+                       
+                        style="z-index: 18; white-space: nowrap; font-size: 15px; line-height: 60px; font-weight: 700; color: #000; letter-spacing: 5px;font-family: 'Poppins', sans-serif;background-color:rgb(255,255,255);cursor:pointer;">READ MORE</div>
+                    </li>
+                    
+                    	<!-- SLIDE 1 -->
+                        <li data-index="rs-965" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="{&quot;revslider-weather-addon&quot; : { &quot;type&quot; : &quot;&quot; ,&quot;name&quot; : &quot;&quot; ,&quot;woeid&quot; : &quot;&quot; ,&quot;unit&quot; : &quot;&quot; }}" data-description="" data-beforeafter='{"moveto":"50%|50%|50%|50%","bgColor":"#e7e7e7","bgType":"image","bgImage":"{% static 'images/main-slider/slider5/slide2.jpg' %}","bgFit":"cover","bgPos":"center center","bgRepeat":"no-repeat","direction":"horizontal","easing":"Power2.easeInOut","delay":"500","time":"750","out":"fade","carousel":false}'>
+                    <!-- MAIN IMAGE -->
+                    <img src="{% static 'images/main-slider/slider5/slide2-sk.jpg' %}" data-beforeafter="after"  data-bgcolor=''  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+                    <!-- LAYERS -->
+                    
+                    <!-- LAYER NR. 1 text -->
+                    <div class="tp-caption   tp-resizeme rs-parallaxlevel-5" 
+                        id="slide-965-layer-1" 
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['110','110','110','0']" 
+                        data-fontsize="['120','120','120','60']"
+                        data-lineheight="['120','120','120','60']"
+                        data-letterspacing="['50','50','50','5']"
+                        data-width="['960','960','960','960']"
+                        
+                        data-height="none"
+                        data-whitespace="normal"
+                    
+                        data-type="text" 
+                        data-beforeafter="before" 
+                        data-responsive_offset="on" 
+                    
+                        data-frames='[{"delay":600,"speed":2000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:40px;","to":"o:1;fb:0;","ease":"Power4.easeInOut"},
+                        {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                        data-textAlign="['center','center','center','center']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,50]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[50,50,50,50]"
+                    
+                        style="z-index: 16; white-space: nowrap; font-size: 120px; line-height: 120px; font-weight: 900; color: #2e313b; letter-spacing: 10px;font-family: 'Poppins', sans-serif;text-transform:uppercase;">Unique</div>
+                    <!-- LAYER NR. 2 text -->
+                    <div class="tp-caption   tp-resizeme rs-parallaxlevel-5" 
+                        id="slide-965-layer-2" 
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['210','210','210','100']" 
+                        data-width="['960','960','960','320']"
+                        data-height="none"
+                        data-whitespace="normal"
+                    
+                        data-type="text" 
+                        data-beforeafter="before" 
+                        data-responsive_offset="on" 
+                    
+                        data-frames='[{"delay":600,"speed":2000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:40px;","to":"o:1;fb:0;","ease":"Power4.easeInOut"},
+                        {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                        data-textAlign="['center','center','center','center']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[5,5,5,5]"
+                    
+                        style="z-index: 11; min-width: 960px; max-width: 960px; white-space: normal; font-size: 18px; line-height: 24px; font-weight: 700; color: #2e313b; letter-spacing: 1px;font-family: 'Poppins', sans-serif;text-transform:uppercase;">Right design and right ideas matter a lot of in interior design business.</div>
+                    <!-- LAYER NR. 3  button-->
+                    <div class="tp-caption   tp-resizeme rs-parallaxlevel-4" 
+                        id="slide-965-layer-3" 
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['bottom','bottom','bottom','bottom']" data-voffset="['70','70','70','80']" 
+                        data-width="none"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                    
+                        data-type="text" 
+                        data-beforeafter="before" 
+                        data-responsive_offset="on" 
+                    
+                        data-frames='[{"delay":700,"speed":2000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:40px;","to":"o:1;fb:0;","ease":"Power4.easeInOut"},
+                        {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"},
+                        {"frame":"hover","speed":"200","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;fb:0;","style":"c:rgb(0,0,0);bg:rgb(255,255,255);"}]'
+                        
+                        data-textAlign="['center','center','center','center']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[40,40,40,40]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[45,45,45,45]"
+                    
+                        style="z-index: 12; white-space: nowrap; font-size: 15px; line-height: 60px; font-weight: 700; color: #fff; letter-spacing: 5px;font-family: 'Poppins', sans-serif;background-color:#2e313b;cursor:pointer;">READ MORE</div>
+                        
+                    <!-- SLIDE RIGHT PART START-->
+                    
+                    <!-- LAYER NR. 1  text-->
+                    <div class="tp-caption   tp-resizeme  tp-blackshadow rs-parallaxlevel-5" 
+                        id="slide-965-layer-4" 
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['110','110','110','0']" 
+                        data-fontsize="['120','120','120','60']"
+                        data-lineheight="['120','120','120','60']"
+                        data-letterspacing="['50','50','50','5']"
+                        data-width="['960','960','960','960']"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                    
+                        data-type="text" 
+                        data-beforeafter="after" 
+                        data-responsive_offset="on" 
+                    
+                        data-frames='[{"delay":2000,"speed":2000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:40px;","to":"o:1;fb:0;","ease":"Power4.easeInOut"},
+                        {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                        data-textAlign="['center','center','center','center']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,50]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[50,50,50,50]"
+                       
+                        style="z-index: 16; white-space: nowrap; font-size: 120px; line-height: 120px; font-weight: 900;
+                         color: #ffffff; letter-spacing: 10px;font-family: 'Poppins', sans-serif; text-transform:uppercase;">Unique </div>
+                    
+                    <!-- LAYER NR. 2 text -->
+                    <div class="tp-caption   tp-resizeme rs-parallaxlevel-5" 
+                        id="slide-965-layer-5" 
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['210','210','210','100']" 
+                        data-width="['960','960','960','320']"
+                        data-height="none"
+                        data-whitespace="normal"
+                    
+                        data-type="text" 
+                        data-beforeafter="after" 
+                        data-responsive_offset="on" 
+                    
+                        data-frames='[{"delay":2100,"speed":2000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:40px;","to":"o:1;fb:0;","ease":"Power4.easeInOut"},
+                        {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                        data-textAlign="['center','center','center','center']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[5,5,5,5]"
+                    
+                        style="z-index: 17; min-width: 960px; max-width: 960px; white-space: normal; font-size: 18px; line-height: 24px; font-weight: 700; color: #ffffff; 
+                        letter-spacing:1px;font-family: 'Poppins', sans-serif;text-transform:uppercase;">Right design and right ideas matter a lot of in interior design business.</div>
+                    
+                    <!-- LAYER NR. 3  button-->
+                    <div class="tp-caption   tp-resizeme rs-parallaxlevel-4" 
+                        id="slide-965-layer-6" 
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                        data-y="['bottom','bottom','bottom','bottom']" data-voffset="['70','70','70','80']" 
+                        data-width="none"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                    
+                        data-type="text" 
+                        data-beforeafter="after" 
+                        data-responsive_offset="on" 
+                    
+                        data-frames='[{"delay":2200,"speed":2000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:40px;","to":"o:1;fb:0;","ease":"Power4.easeInOut"},
+                        {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"},
+                        {"frame":"hover","speed":"200","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;fb:0;","style":"c:rgb(0,0,0);bg:rgb(255,255,255);"}]'
+                        data-textAlign="['center','center','center','center']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[40,40,40,40]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[45,45,45,45]"
+                       
+                        style="z-index: 18; white-space: nowrap; font-size: 15px; line-height: 60px; font-weight: 700; color: #2e313b; letter-spacing: 5px;font-family: 'Poppins', sans-serif;background-color:rgb(255,255,255);cursor:pointer;">READ MORE</div>
+                    </li>                    
+                    
+                    </ul>
+                    <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="owl-carousel owl-theme">
-           
-          
-            {% for details in testimonials %}
-            <div class="item">
-                <div class="box">
-                   <!-- <div class="image">
-                        <figure class="testimonial-image1 mb-0">
-                            <img src="{{details.image.url}}" alt="" class="img-fluid">
-                        </figure>                    
-                        <figure class="testimonial-image2 mb-0">
-                            <img src="{{details.image.url}}" alt="" class="img-fluid">
-                        </figure>                    
-                        <figure class="testimonial-image3 mb-0">
-                            <img src="{% static 'assets/images/testimonial-5.png' %}" alt="" class="img-fluid">
-                        </figure>                    
-                        <figure class="testimonial-image4 mb-0">
-                            <img src="{% static 'assets/images/testimonial-3.png' %}" alt="" class="img-fluid">
-                        </figure>
-                        <figure class="testimonial-image5 mb-0">
-                            <img src="{% static 'assets/images/testimonial-4.png' %}" alt="" class="img-fluid">
-                        </figure>
-                        <figure class="quote-icon mb-0">
-                            <img src="{% static 'assets/images/quote-icon.png' %}" class="img-fluid" alt="">
-                        </figure>
-                    </div>     -->               
-                    <div class="box-content">
-                        <p class="text-size-18">
-                            {{details.content}}
-                          </p>
-                        <ul class="list-unstyled mb-0">
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                        </ul>
-                        <div class="lower-portion">
-                            <span class="text-white text-size-16">{{details.name}}</span>
-                            <span class="text-size-14">Happy Customer</span>
-                            <figure class="quote-image mb-0">
-                                <img src="{{details.image.url}}" class="img-fluid" alt="">
-                            </figure>
+            <!-- SLIDER END -->
+                    
+            <!-- ABOUT COMPANY SECTION START -->
+            <div class="section-full p-t80 p-b50	 bg-white inner-page-padding">
+                <div class="container">
+                    <div class="section-content ">
+                         <div class="our-history text-black">
+                         		<div class="row">
+                                	<div class="col-12 pic-bg-border">
+                                    	<div class="our-history-pic bg-no-repeat bg-center bg-cover" data-stellar-background-ratio="0.5" style="background-image:url({% static 'images/our-history/4.jpg' %});">
+											
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                    	<div class="our-history-content m-b30">
+                                            <div class="large-title">
+                                              <h2 class="m-t0">About </h2>
+                                              <h4>17 Columns</h4>
+                                            </div>
+                                            <p>17 Columns Interior is celebrated for its innovative approach to interior design, combining functionality with aesthetic appeal. Specializing in residential and commercial spaces, they create harmonious environments that reflect each client's unique style and needs. With a focus on elegance and practicality, their designs seamlessly blend modern trends with timeless sophistication.</p>
+                                            <a href="{% url 'webapp:about' %}" class="site-button-secondry btn-half"><span> View All</span></a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                         		<div class="row">
+                                	<div class="col-12 pic-bg-border">
+                                    	<div class="our-history-pic bg-no-repeat bg-center bg-cover" data-stellar-background-ratio="0.5" style="background-image:url({% static 'images/our-history/home1.jpg' %});">
+												
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                    	<div class="our-history-content m-b30">
+                                            <div class="large-title">
+                                              <h2 class="m-t0">Premium Works</h2>
+                                              <h4>17 Columns</h4>
+                                            </div>
+                                            <p>17 Columns Interior is celebrated for its premium interior design projects, delivering excellence in both residential and commercial spaces. With a keen eye for detail and a dedication to creating sophisticated environments, we blend creativity and expertise to exceed client expectations. Our designs seamlessly integrate functionality and refined aesthetics, ensuring each project reflects our commitment to unparalleled quality and style.</p><a href="{% url 'webapp:our_work' %}" class="site-button-secondry btn-half"><span> View All</span></a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                         		<div class="row">
+                                	<div class="col-12 pic-bg-border">
+                                    	<div class="our-history-pic bg-no-repeat bg-center bg-cover" data-stellar-background-ratio="0.5" style="background-image:url({% static 'images/our-history/alma-1.jpg' %});">
+											
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                    	<div class="our-history-content m-b30">
+                                            <div class="large-title">
+                                              <h2 class="m-t0">Premium Products</h2>
+                                              <h4>17 Columns</h4>
+                                            </div>
+                                            <p>At 17 Columns Interior, our product line exudes sophistication and quality craftsmanship. From elegant furniture to bespoke decor, each item is meticulously selected to enhance your space with timeless style and luxurious comfort. Discover our curated collection that caters to discerning tastes, ensuring every piece reflects our commitment to exquisite design and impeccable detail.</p>
+                                            <a href="{% url 'webapp:product' %}" class="site-button-secondry btn-half"><span> View All</span></a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                         		<div class="row">
+                                	<div class="col-12 pic-bg-border">
+                                    	<div class="our-history-pic bg-no-repeat bg-center bg-cover" data-stellar-background-ratio="0.5" style="background-image:url({% static 'images/our-history/3.jpg' %});">
+											
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                    	<div class="our-history-content m-b30">
+                                            <div class="large-title">
+                                              <h2 class="m-t0">Blog Post</h2>
+                                              <h4>17 Columns</h4>
+                                            </div>
+                                            <p>Explore the 17 Columns Interior blog for expert insights, trends, and DIY tips that enhance your home decor journey. Discover creative ideas and practical advice to transform your living spaces into stylish sanctuaries.</p>
+                                            <a href="{% url 'webapp:post_list' %}" class="site-button-secondry btn-half"><span> View All</span></a>
+                                            
+                                        </div>
+                                    </div>
+                                </div> 
+                                
+                         		<div class="row">
+                                	<div class="col-12 pic-bg-border">
+                                    	<div class="our-history-pic bg-no-repeat bg-center bg-cover" data-stellar-background-ratio="0.5" style="background-image:url({% static 'images/our-history/5.jpg' %});">
+											
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                    	<div class="our-history-content m-b30">
+                                            <div class="large-title">
+                                              <h2 class="m-t0">Get In Touch With</h2>
+                                              <h4>17 Columns</h4>
+                                            </div>
+                                            <p>Feel free to contact 17 Columns Interior for any inquiries or to schedule a consultation. We're here to assist you in bringing your interior design aspirations to life, ensuring each space reflects your unique style and preferences.</p>
+                                            <a href="{% url 'webapp:contact' %}" class="site-button-secondry btn-half"><span> View All</span></a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                         		
+                                                         
+                                                                                                                               
                         </div>
                     </div>
                 </div>
-            </div>
-            {% endfor %}
+            </div>   
+            <!-- ABOUT COMPANY SECTION END -->
             
+                           
+                                
         </div>
-    </div>
-</div>
-</section>
-<!-- Journey -->
-<section class="journey-section">
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="journey_content" data-aos="fade-right">
-                <h6>Work With Us</h6>
-                <h2>Start Your Customer Journey With Us.</h2>
-            </div>
-            <div class="journey-button">
-                <a class="get_started text-decoration-none" href="{% url 'webapp:contact' %}">Get Started</a>
-                <a class="image-button text-decoration-none" href="{% url 'webapp:contact' %}">
-                    <figure class="arrow mb-0">
-                        <img src="{% static 'assets/images/arrow.png' %}" alt="" class="img-fluid">
-                    </figure>
-                </a> 
-            </div>
-        </div>
-    </div>
-</div>
-</section>
-<!-- Blog -->
-<section class="blog-section">
-<figure class="light-image mb-0">
-    <img src="{% static 'assets/images/top-lightimage.png' %}" alt="" class="img-fluid">
-</figure>
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="blog_content" data-aos="fade-up">
-                <h6>Latest Products</h6>
-                <h2>Our Recent products</h2>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="carousel-content">
-            <div class="carousel-outer">
-                <div class="owl-carousel owl-theme">
-
-             {% for details in product_list %} 
-
-                    <div class="item">
-                        <div class="image">
-                            <figure class="mb-0">
-                                <img src="{{details.image.url}}" class="img-fluid" alt="">
-                            </figure>
-                            <div class="box-content">
-                                <span class="text-size-16">{{details.created_at.date}}</span>
-                                <h5 class="text-white">{{details.category_name}}</h5>
-                               <!-- <p class="text-size-18 mb-0">Debitis aut rerum nec sitatoe bus saerue eveniet...</p> -->
-                            </div>
-                        </div>
-                    </div>
-                  {% endfor %} 
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</section>
-
-
+        <!-- CONTENT END -->
 {% endblock body %}

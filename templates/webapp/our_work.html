@@ -7,150 +7,244 @@
 
 
 
-<section class="banner-section">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-5 col-md-12 col-sm-12 col-12 order-lg-1 order-2 banner-column">
-                <div class="banner_content" data-aos="fade-left">
-                    <div class="content">
-                        <h1>Our Work</h1>
-                        
-                       <!-- <div class="box">
-                            <span class="mb-0">Home</span>
-                            <span class="mb-0 dash">-</span>
-                            <span class="mb-0 box_span">Portfolio</span>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-7 col-md-12 col-sm-12 col-12 order-lg-2 order-1">
-                <div class="banner_wrapper">
-                    <figure class="sub-bannerimage mb-0" data-aos="fade-up">
-                        <img src="{% static 'assets/images/portfolio-bannerimage.jpg' %}" alt="" class="img-fluid">
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-</div>
-<!-- Portfolio -->
-<section class="portfolio-section">
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="subheading" data-aos="fade-right">
-                <h6>What’s New</h6>
-                <h2>Recent Designs We Have Done</h2>
-            </div>
-        </div>
-    </div>
-   
+  
+        <!-- CONTENT START -->
+        <div class="page-content">
+            <!-- INNER PAGE BANNER -->
+            <div class="sx-bnr-inr overlay-wraper bg-parallax bg-top-center"  data-stellar-background-ratio="0.5"  style="background-image:url({% static 'images/banner/5.jpg' %});">
+            	<div class="overlay-main bg-black opacity-07"></div>
+                <div class="container">
+                    <div class="sx-bnr-inr-entry">
+                    	<div class="banner-title-outer">
+                        	<div class="banner-title-name">
+                        		<h2 class="m-tb0">Our Works</h2>
+                                <p>
 
-   
-        <div class="tab-content">
-            <div id="all" class="tab-pane fade in active show">
-                <div class="row position-relative" data-aos="fade-up">
-                    {% for details in work_list %}
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-12">
-                        <div class="image">
-                            <figure class="tab-image mb-0">
-                                <img src="{{details.category_image.url}}" class="img-fluid" alt="">
-                            </figure>
-                            <div class="box-content">
-                                <div class="content">
-                                    <span class="text-white text-size-16">MERAKI</span>
-                                    <h4 class="text-white">{{details.category_name}}</h4>
-                                    <a class="text-decoration-none" href="{% url 'webapp:our_work_detail' details.id %}">
-                                        <figure class="arrow mb-0">
-                                            <img src="{% static 'assets/images/arrow.png' %}" alt="" class="img-fluid">
-                                        </figure>
-                                    </a>
-                                </div>
+</p>
                             </div>
                         </div>
-                    </div> 
-                    {% endfor %}
-                </div>
-            </div>  
-        </div>
-       
-   
-</div>
-</section>
-<!-- Testimonial -->
-<section class="testimonial-section">
-<figure class="light-image mb-0">
-    <img src="{% static 'assets/images/top-lightimage.png' %}" alt="" class="img-fluid">
-</figure>
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="testimonial_content" data-aos="fade-right">
-                <h6>Testimonials</h6>
-             <!--   <h2>Trusted By Over 30,000 Worldwide Customers Since 1998</h2> -->
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="owl-carousel owl-theme">
-            {% for details in testimonials %}
-            <div class="item">
-                <div class="box">
-                  <!--- <div class="image">
-                        <figure class="testimonial-image mb-0">
-                            <img src="{% static 'assets/images/testimonial-image1.png' %}" class="img-fluid" alt="">
-                        </figure>
-                        <figure class="quote-icon mb-0">
-                            <img src="{% static 'assets/images/quote-icon.png' %}" class="img-fluid" alt="">
-                        </figure>
-                    </div>             -->       
-                    <div class="box-content">
-                        <p class="text-size-18">{{details.content}}</p>
-                        <ul class="list-unstyled mb-0">
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                            <li><a href=""><i class="fa-solid fa-star"></i></a> </li>
-                        </ul>
-                        <div class="lower-portion">
-                            <span class="text-white text-size-16">{{details.name}}</span>
-                            <span class="text-size-14">Happy Customer</span>
-                            <figure class="quote-image mb-0">
-                                <img src="{{details.image.url}}" class="img-fluid" alt="">
-                            </figure>
-                        </div>
+                        <!-- BREADCRUMB ROW -->                            
+                        
+                            <div>
+                                <ul class="sx-breadcrumb breadcrumb-style-2">
+                                    <li><a href="/">Home</a></li>
+                                    <li>Our Works</li>
+                                </ul>
+                            </div>
+                        
+                        <!-- BREADCRUMB ROW END -->                        
                     </div>
                 </div>
             </div>
-            {% endfor %}
-        </div>
-    </div>
-</div>
-</section>
-<!-- Journey -->
-<section class="journey-section">
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="journey_content" data-aos="fade-right">
-                <h6>Work With Us</h6>
-                <h2>Start Your Customer Journey With Us.</h2>
+            <!-- INNER PAGE BANNER END -->
+            
+			<!-- SECTION CONTENT START -->
+            <div class="section-full p-tb80 column-grid-4 inner-page-padding">
+            	<div class="container">
+                   
+                   
+                    
+                    <!-- GALLERY CONTENT START -->
+                     <ul  class="masonry-outer mfp-gallery row work-grid clearfix list-unstyled">
+                        {% for details in work_list %}
+                        <!-- COLUMNS 1 -->
+                        <li class="masonry-item cat-1 col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
+                           
+                            <div class="sx-box   image-hover-block">
+                               
+                                <div class="sx-thum-bx">
+                                    <img style="height: 350px; width: 750px;" src="{{details.category_image.url}}" alt="">
+                                </div>
+                                <div class="sx-info  p-t20 text-white">
+                                    <h4 class="sx-tilte m-t0"><a href="{% url 'webapp:our_work_detail' details.id %}">{{details.category_name}}</a></h4>
+                                    <!--<p class="m-b0">Muscat, Sultanate of Oman</p>-->      
+                                </div>
+                                <a class="mfp-link" href="{{details.category_image.url}}">
+                                    <i class="fa fa-arrows-alt"></i>
+                                </a>    
+                                                                 
+                           </div>
+                          
+                        </li>
+                        {% endfor %}      
+                        <!-- COLUMNS 2 -->
+                      <!--  <li class="masonry-item cat-2 col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
+                            <div class="sx-box   image-hover-block">
+                                <div class="sx-thum-bx">
+                                    <img src="{% static 'images/projects/portrait/pic2.jpg' %}" alt="">
+                                </div>
+                                <div class="sx-info  p-t20 text-white">
+                                    <h4 class="sx-tilte m-t0"><a href="#">Vilters</a></h4>
+                                    <p class="m-b0">Muscat, Sultanate of Oman</p>      
+                                </div>
+                                <a class="mfp-link" href="{% static 'images/projects/portrait/pic2.jpg' %}">
+                                    <i class="fa fa-arrows-alt"></i>
+                                </a>                                            
+                           </div>
+                        </li>
+                       
+                        <li class="masonry-item cat-3 col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
+                            <div class="sx-box   image-hover-block">
+                                <div class="sx-thum-bx">
+                                    <img src="{% static 'images/projects/portrait/pic3.jpg' %}" alt="">
+                                </div>
+                                <div class="sx-info  p-t20 text-white">
+                                    <h4 class="sx-tilte m-t0"><a href="#">Industrial Design</a></h4>
+                                    <p class="m-b0">Muscat, Sultanate of Oman</p>      
+                                </div>
+                                <a class="mfp-link" href="{% static 'images/projects/portrait/pic3.jpg' %}">
+                                    <i class="fa fa-arrows-alt"></i>
+                                </a>                                            
+                           </div>
+                        </li>
+                       
+                        <li class="masonry-item cat-4 col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
+                            <div class="sx-box   image-hover-block">
+                                <div class="sx-thum-bx">
+                                    <img src="{% static 'images/projects/portrait/pic4.jpg' %}" alt="">
+                                </div>
+                                <div class="sx-info  p-t20 text-white">
+                                    <h4 class="sx-tilte m-t0"><a href="#">House Bluprint</a></h4>
+                                    <p class="m-b0">Muscat, Sultanate of Oman</p>      
+                                </div>
+                                <a class="mfp-link" href="{% static 'images/projects/portrait/pic4.jpg' %}">
+                                    <i class="fa fa-arrows-alt"></i>
+                                </a>                                            
+                           </div>
+                        </li>
+                       
+                        <li class="masonry-item cat-5 col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
+                            <div class="sx-box   image-hover-block">
+                                <div class="sx-thum-bx">
+                                    <img src="{% static 'images/projects/portrait/pic5.jpg' %}" alt="">
+                                </div>
+                                <div class="sx-info  p-t20 text-white">
+                                    <h4 class="sx-tilte m-t0"><a href="#">Modern Bathroom</a></h4>
+                                    <p class="m-b0">Muscat, Sultanate of Oman</p>      
+                                </div>
+                                <a class="mfp-link" href="images/projects/portrait/pic5.jpg">
+                                    <i class="fa fa-arrows-alt"></i>
+                                </a>                                            
+                           </div>
+                        </li>
+                        
+                        <li class="masonry-item cat-4 col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
+                            <div class="sx-box   image-hover-block">
+                                <div class="sx-thum-bx">
+                                    <img src="{% static 'images/projects/portrait/pic6.jpg' %}" alt="">
+                                </div>
+                                <div class="sx-info  p-t20 text-white">
+                                    <h4 class="sx-tilte m-t0"><a href="#">Bellevue Project</a></h4>
+                                    <p class="m-b0">Muscat, Sultanate of Oman</p>      
+                                </div>
+                                <a class="mfp-link" href="{% static 'images/projects/portrait/pic6.jpg' %}">
+                                    <i class="fa fa-arrows-alt"></i>
+                                </a>                                            
+                           </div>
+                        </li>
+                        
+                        <li class="masonry-item cat-3 col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
+                            <div class="sx-box   image-hover-block">
+                                <div class="sx-thum-bx">
+                                    <img src="{% static 'images/projects/portrait/pic7.jpg' %}" alt="">
+                                </div>
+                                <div class="sx-info  p-t20 text-white">
+                                    <h4 class="sx-tilte m-t0"><a href="#">Qatar Pavilion</a></h4>
+                                    <p class="m-b0">Muscat, Sultanate of Oman</p>      
+                                </div>
+                                <a class="mfp-link" href="{% static 'images/projects/portrait/pic7.jpg' %}">
+                                    <i class="fa fa-arrows-alt"></i>
+                                </a>                                            
+                           </div>
+                        </li>
+                       
+                        <li class="masonry-item cat-2 col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
+                            <div class="sx-box   image-hover-block">
+                                <div class="sx-thum-bx">
+                                    <img src="{% static 'images/projects/portrait/pic8.jpg' %}" alt="">
+                                </div>
+                                <div class="sx-info  p-t20 text-white">
+                                    <h4 class="sx-tilte m-t0"><a href="#">Museum</a></h4>
+                                    <p class="m-b0">Muscat, Sultanate of Oman</p>      
+                                </div>
+                                <a class="mfp-link" href="{% static 'images/projects/portrait/pic8.jpg' %}">
+                                    <i class="fa fa-arrows-alt"></i>
+                                </a>                                            
+                           </div>
+                        </li>
+                       
+                        <li class="masonry-item cat-1 col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
+                            <div class="sx-box   image-hover-block">
+                                <div class="sx-thum-bx">
+                                    <img src="{% static 'images/projects/portrait/pic9.jpg' %}" alt="">
+                                </div>
+                                <div class="sx-info  p-t20 text-white">
+                                    <h4 class="sx-tilte m-t0"><a href="#">Modern house</a></h4>
+                                    <p class="m-b0">Muscat, Sultanate of Oman</p>      
+                                </div>
+                                <a class="mfp-link" href="{% static 'images/projects/portrait/pic9.jpg' %}">
+                                    <i class="fa fa-arrows-alt"></i>
+                                </a>                                            
+                           </div>
+                        </li>  
+                      
+                        <li class="masonry-item cat-3 col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
+                            <div class="sx-box   image-hover-block">
+                                <div class="sx-thum-bx">
+                                    <img src="{% static 'images/projects/portrait/pic7.jpg' %}" alt="">
+                                </div>
+                                <div class="sx-info  p-t20 text-white">
+                                    <h4 class="sx-tilte m-t0"><a href="#">Qatar Pavilion</a></h4>
+                                    <p class="m-b0">Muscat, Sultanate of Oman</p>      
+                                </div>
+                                <a class="mfp-link" href="{% static 'images/projects/portrait/pic7.jpg' %}">
+                                    <i class="fa fa-arrows-alt"></i>
+                                </a>                                            
+                           </div>
+                        </li>
+                       
+                        <li class="masonry-item cat-2 col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
+                            <div class="sx-box   image-hover-block">
+                                <div class="sx-thum-bx">
+                                    <img src="{% static 'images/projects/portrait/pic8.jpg' %}" alt="">
+                                </div>
+                                <div class="sx-info  p-t20 text-white">
+                                    <h4 class="sx-tilte m-t0"><a href="#">Museum</a></h4>
+                                    <p class="m-b0">Muscat, Sultanate of Oman</p>      
+                                </div>
+                                <a class="mfp-link" href="{% static 'images/projects/portrait/pic8.jpg' %}">
+                                    <i class="fa fa-arrows-alt"></i>
+                                </a>                                            
+                           </div>
+                        </li> 
+                        
+                        <li class="masonry-item cat-1  col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
+                            <div class="sx-box   image-hover-block">
+                                <div class="sx-thum-bx">
+                                    <img src="{% static 'images/projects/portrait/pic1.jpg' %}" alt="">
+                                </div>
+                                <div class="sx-info  p-t20 text-white">
+                                    <h4 class="sx-tilte m-t0"><a href="#">Interior Work Avroko</a></h4>
+                                    <p class="m-b0">Muscat, Sultanate of Oman</p>      
+                                </div>
+                                <a class="mfp-link" href="{% static 'images/projects/portrait/pic1.jpg' %}">
+                                    <i class="fa fa-arrows-alt"></i>
+                                </a>                                            
+                           </div>
+                        </li>-->                                                                                
+                     </ul>
+                  
+                    
+                   
+            	</div>
+
+            
             </div>
-            <div class="journey-button">
-                <a class="get_started text-decoration-none" href="{% url 'webapp:contact' %}">Get Started</a>
-                <a class="image-button text-decoration-none" href="{% url 'webapp:contact' %}">
-                    <figure class="arrow mb-0">
-                        <img src="{% static 'assets/images/arrow.png' %}" alt="" class="img-fluid">
-                    </figure>
-                </a> 
-            </div>
+            <!-- SECTION CONTENT END  -->
+
         </div>
-    </div>
-</div>
-</section>
-<!-- Blog -->
+        <!-- CONTENT END -->
+        
 
 
 {% endblock body %}
